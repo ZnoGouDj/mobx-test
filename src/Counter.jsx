@@ -14,6 +14,16 @@ const Counter = observer(() => {
         <button className='btn' onClick={() => counter.decrement()}>
           -
         </button>
+        <button className='btn' onClick={() => counter.multiple()}>
+          X
+        </button>
+        <button className='btn' onClick={() => counter.division()}>
+          /
+        </button>
+
+        <button className='btn' onClick={() => counter.zero()}>
+          0
+        </button>
       </div>
     </div>
   );
