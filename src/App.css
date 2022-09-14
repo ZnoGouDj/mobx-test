@@ -1,38 +1,85 @@
+body {
+  background: #1b1c1d;
+  color: #ddd8c2;
+  text-transform: uppercase;
+}
+
 .App {
   text-align: center;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  background: #93d1ac !important;
+  color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counter {
+  font-weight: bold;
+  font-size: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btns {
+  margin-top: 30px;
+}
+
+.btns button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  font-weight: bold;
+  font-size: 45px;
+  background: #fe5c2b;
+  margin: 0 5px;
+}
+
+.todo-container {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-container > button {
+  width: 25%;
+  background: #1b1c1d;
+  border: 2px solid #ddd8c2;
+  color: #ddd8c2;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-container > .todo {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.todo-container > .todo > button {
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background: #fe5c2b;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 27px;
+}
+
+.todo-container input {
+  background: #fa9bbb;
+  width: 44px;
+  height: 44px;
 }

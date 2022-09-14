@@ -1,10 +1,11 @@
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 import todo from './store/todo';
+import './App.css';
 
 const Todo = observer(() => {
   return (
-    <div>
+    <div className='todo-container'>
       <button onClick={() => todo.fetchTodos()}>fetch todo</button>
       {todo.todos.map((t) => (
         <div className='todo' key={t.id}>
