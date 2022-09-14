@@ -19,7 +19,7 @@ class Counter {
     }
 
     get total() {
-        return 'Count + timer = ' + this.timer + this.count;
+        return 'Count + timer = ' + +this.timer + this.count;
     }
 }
 

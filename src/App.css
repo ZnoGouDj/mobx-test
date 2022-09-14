@@ -2,6 +2,7 @@ body {
   background: #1b1c1d;
   color: #ddd8c2;
   text-transform: uppercase;
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .App {
@@ -56,10 +57,10 @@ button:hover {
 }
 
 .todo-container > .todo {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
-  width: 30%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   line-height: 50px;
@@ -82,4 +83,8 @@ button:hover {
   background: #fa9bbb;
   width: 44px;
   height: 44px;
+}
+
+.todo-container span.checked {
+  text-decoration: line-through;
 }

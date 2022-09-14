@@ -10,7 +10,7 @@ const Todo = observer(() => {
       {todo.todos.map((t) => (
         <div className='todo' key={t.id}>
           <input type='checkbox' checked={t.completed} onChange={() => todo.completeTodo(t.id)} />
-          {t.title}
+          <span className={t.completed ? 'checked' : ''}>{t.title}</span>
           <button onClick={() => todo.removeTodo(t.id)}>X</button>
         </div>
       ))}
